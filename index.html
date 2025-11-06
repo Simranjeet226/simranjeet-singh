@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simranjeet Singh — Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+      color:#0b0b0b;background:#fff;line-height:1.45;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:48px 24px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px}
+    .brand{display:flex;flex-direction:column}
+    .brand .name{font-family:'Playfair Display',serif;font-size:28px;font-weight:700}
+    .brand .role{font-size:12px;color:#555;margin-top:4px;text-transform:uppercase;letter-spacing:1.5px}
+    nav ul{display:flex;gap:20px;list-style:none}
+    nav a{text-decoration:none;color:#111;font-weight:600;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start;margin-bottom:64px}
+    .hero-left{max-width:680px}
+    .eyebrow{font-size:13px;color:#888;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+    h1{font-family:'Playfair Display',serif;font-size:56px;line-height:1.02;margin-bottom:18px;font-weight:700}
+    p.lead{font-size:18px;color:#333;margin-bottom:28px;max-width:50ch}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn{display:inline-block;padding:12px 18px;border-radius:6px;font-weight:700;text-decoration:none;font-size:14px}
+    .btn-primary{background:#111;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    .btn-ghost{border:1px solid #111;color:#111;background:transparent}
+    .card{background:#f7f7f7;padding:20px;border-radius:12px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+    .card .meta{font-size:13px;color:#666}
+    .stat{display:flex;gap:12px;align-items:center}
+    .stat .num{font-weight:800;font-size:20px}
+    section.projects{margin-bottom:64px}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .project{position:relative;overflow:hidden;border-radius:10px;min-height:220px;background:#111;color:#fff;display:flex;flex-direction:column;justify-content:end;padding:20px;transition:transform .35s ease,box-shadow .35s ease}
+    .project:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.16)}
+    .project .kicker{font-size:12px;opacity:0.85;margin-bottom:6px}
+    .project h3{font-size:20px;margin-bottom:6px}
+    .project p{font-size:13px;opacity:0.9}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:36px}
+    .about p{margin-bottom:14px}
+    .contact-card{border-radius:12px;padding:18px;background:#111;color:#fff;display:flex;flex-direction:column;gap:10px}
+    footer{margin-top:40px;padding-top:30px;border-top:1px solid #eee;color:#666;font-size:13px;text-align:center}
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      .projects-grid{grid-template-columns:1fr}
+      .container{padding:28px}
+    }
+    .project[data-bg]{background-size:cover;background-position:center}
+    .fade-up{animation:fadeUp .6s ease both}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    /* Resume sections */
+    .resume-section{margin-top:64px;margin-bottom:64px}
+    .resume-section h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:16px}
+    .resume-section p,.resume-section li{font-size:15px;color:#333;margin-bottom:10px}
+    ul.resume-list{list-style:disc;margin-left:20px}
+    .subhead{font-weight:700;margin-top:18px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="name">Simranjeet Singh</div>
+        <div class="role">Frontend Developer &amp; Full-Stack Support</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left fade-up">
+          <div class="eyebrow">Portfolio</div>
+          <h1>Designing and building responsive, scalable systems for modern web experiences.</h1>
+          <p class="lead">Information and Computer Systems Technology student with hands-on experience in frontend development and full-stack support, skilled in Material UI, React, and cloud technologies.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#work">View Projects</a>
+            <a class="btn btn-ghost" href="#resume">View Resume</a>
+          </div>
+        </div>
+
+        <aside class="card fade-up">
+          <div class="meta">Currently</div>
+          <div style="font-weight:700">ICS Student at Camosun College</div>
+          <div class="stat">
+            <div><div class="num">2025</div><div class="meta">Graduation Year</div></div>
+          </div>
+          <div class="meta" style="margin-top:6px">Open to Developer or Systems Admin roles</div>
+        </aside>
+      </section>
+
+      <section id="work" class="projects">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px">
+          <h2 style="font-family:'Playfair Display',serif;font-size:28px">Projects</h2>
+          <div style="color:#666;font-size:13px">Selected work &amp; prototypes</div>
+        </div>
+        <div class="projects-grid">
+          <article class="project" style="background-image:url('assets/project-01.jpg')">
+            <div class="kicker">Frontend Design</div>
+            <h3>Portfolio Website</h3>
+            <p>Developed responsive React interfaces using Material UI and custom components.</p>
+          </article>
+          <article class="project" style="background-image:url('assets/project-02.jpg')">
+            <div class="kicker">Full Stack</div>
+            <h3>API Dashboard</h3>
+            <p>Integrated REST and GraphQL APIs using Node.js, ensuring optimized data flow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about two-col">
+        <div>
+          <h2 style="font-family:'Playfair Display',serif;font-size:28px;margin-bottom:12px">About</h2>
+          <p>I’m passionate about creating clean, efficient code and delivering interfaces that enhance user experience. My work bridges design and development, ensuring performance and accessibility across platforms.</p>
+          <p>Collaborative, detail-oriented, and motivated to continue learning emerging technologies like cloud computing and DevOps workflows.</p>
+        </div>
+
+        <aside class="contact-card" id="contact">
+          <div style="font-weight:700">Contact</div>
+          <div>Email: <a href="mailto:simranjeet@example.com" style="color:inherit;text-decoration:underline">simranjeet@example.com</a></div>
+          <div>Location: Victoria, BC, Canada</div>
+        </aside>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section">
+        <h2>Objective</h2>
+        <p>Information and Computer Systems Technology student with hands-on experience in frontend development and full-stack support. Skilled in building responsive interfaces with Material UI and collaborating in Agile environments. Seeking to leverage technical expertise in JavaScript, React, and cloud technologies for a development or systems administration role.</p>
+
+        <h2>Skills &amp; Abilities</h2>
+        <p class="subhead">Technical Specializations</p>
+        <ul class="resume-list">
+          <li>Frontend Development (Material UI, React.js)</li>
+          <li>Full-Stack Support</li>
+          <li>Cloud Computing</li>
+          <li>IT Documentation</li>
+        </ul>
+
+        <p class="subhead">Programming &amp; Tools</p>
+        <ul class="resume-list">
+          <li>Languages: JavaScript, C++, Java, SQL, Python, PowerShell</li>
+          <li>Frameworks/Technologies: React.js, Node.js, Material UI, REST APIs, GraphQL, Docker, GitHub Actions</li>
+          <li>Testing Tools: Postman, Vitest</li>
+          <li>Cloud &amp; Infra: AWS (Lambda, API Gateway), Linux, Windows Server</li>
+        </ul>
+
+        <p class="subhead">Applications &amp; Systems</p>
+        <ul class="resume-list">
+          <li>Oracle ERP, SAP, SharePoint, MS Office, Teams</li>
+          <li>Object-Oriented Programming, Web Application Development</li>
+          <li>Relational DB Design, SQL Query Optimization</li>
+        </ul>
+
+        <p class="subhead">Professional Strengths</p>
+        <ul class="resume-list">
+          <li>Clear communication for technical and non-technical stakeholders</li>
+          <li>Agile team collaboration and sprint-based project delivery</li>
+          <li>Quick learner of new tools and compliance standards</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <p><strong>Frontend Developer &amp; Full-Stack Support – Dyspatch</strong><br>
+        Camosun College | Victoria | May 2025 - August 2025</p>
+        <ul class="resume-list">
+          <li>Developed responsive user interfaces using React.js and Material UI, ensuring consistent design and usability.</li>
+          <li>Provided full-stack support, debugging backend services (Node.js, GraphQL) and optimizing API integrations.</li>
+          <li>Collaborated in Agile workflows to deliver features aligned with client requirements.</li>
+          <li>Contributed to documentation for system processes and frontend component libraries.</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p><strong>Diploma in Information and Computer Systems Technology</strong><br>
+        Camosun College | January 2024 - September 2025</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Simranjeet Singh — Portfolio Website
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const href=a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          const el=document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
